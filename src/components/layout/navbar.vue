@@ -1,10 +1,10 @@
 <template>
-    <b-navbar>
+    <b-navbar class="navbar is-dark has-shadow">
         <template #brand>
             <b-navbar-item href="/">
                 <img 
-                    src="@/assets/tampa-bay-lightning.svg"
-                    alt="Tampa Bay Lightning Bitches!"
+                    src="@/assets/placeholder-logo.png"
+                    alt="Logo"
                 >
             </b-navbar-item>
         </template>

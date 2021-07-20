@@ -1,5 +1,5 @@
 <template>
-    <div id="directives">
+    <div id="directives" class="has-background-light">
         <div class="columns is-desktop">
             <div class="column">     
                 <div class="content">Message: <b>{{message}}</b></div> 
@@ -103,7 +103,7 @@ h2 {
     border: 1px solid #999;
     border-radius: 6px;
     padding: 10px;
-    background-color: #ececec;
+    /* background-color: #ececec; */
     text-align: left;
 }
 </style>

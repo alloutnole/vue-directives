@@ -3,7 +3,7 @@
         <b-collapse class="card" animation="slide" aria-id="contentIdForA11y3">
             <template #trigger="props">
                 <div
-                    class="card-header is-primary"
+                    class="card-header has-background-light"
                     role="button"
                     aria-controls="contentIdForA11y3">
                     <p class="card-header-title">
@@ -29,8 +29,7 @@
 export default {
     name: 'Collapse',
     data() {
-        return {
-            
+        return {            
         }
     } 
 }

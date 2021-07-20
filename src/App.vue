@@ -1,7 +1,6 @@
 <template>
   <div id="app" class="container">
     <nav-bar />
-    <h2 class="title">Directives</h2>
     <collapse />
     <directives />    
   </div>
