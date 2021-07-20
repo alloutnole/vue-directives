@@ -1,0 +1,19 @@
+<template>
+  <div>
+    <h2>Hello World</h2>   
+  </div>
+</template>
+
+<script>
+
+export default {
+  name: 'HelloWorld',
+}
+</script>
+
+<!-- Add "scoped" attribute to limit CSS to this component only -->
+<style>
+h2 {
+  font-size: 20px;
+}
+</style>

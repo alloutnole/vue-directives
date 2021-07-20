@@ -1,0 +1,330 @@
+.backgroundColorGrey {
+    background-color: rgba(241, 241, 241, 0.363);
+}
+
+.backgroundColorDarkGrey {
+    background-color: #11121396;
+}
+
+.backgroundColorGreen {
+    background-color: rgb(72, 199, 116);
+}
+
+.backgroundColorRed {
+    background-color: #f14668;
+  }
+
+.boxShadow0Px {
+    box-shadow: 0px 0px;
+}
+
+.bottomBorderWhite {
+    border-bottom: 3.5px solid rgb(255, 255, 255);
+  }
+
+.b-checkbox.checkbox[disabled] {
+    opacity: 0.9;
+}
+
+.b-checkbox.button {
+    height: 1.75em;
+    margin-right: 1.75em;
+}
+
+.b-checkbox.button.is-warning {
+    color: rgb(134, 134, 134);
+    background-color: rgb(255,230,0);
+}
+.b-table .table tr.detail {
+    background-color: rgba(53, 53, 53, .0);
+    box-shadow: inset 0 1px 3px rgba(43, 43, 43, 0.3);
+}
+
+.b-table .table-wrapper + .level {
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.button.is-warning {
+    color: rgb(134, 134, 134);
+    background-color: rgb(255,230,0);
+}
+
+.colorIsDangerDark {
+    color:#ff0095;
+}
+
+.colorWhite {
+    color: rgb(255, 255, 255);
+}
+
+table.table {
+    background-color: rgba(212, 212, 212, 0);
+}
+
+.b-table .table-wrapper + .level .pagination .is-current {
+    background-color: #7957d5;
+    color: white;
+}
+
+.b-table .table-wrapper + .level .pagination-previous,
+.b-table .table-wrapper + .level .pagination-next {
+    background-color: white;
+}
+
+.b-table .table-wrapper + .level .pagination-link[disabled] {
+    background-color: rgba(141, 141, 141, .7);
+}
+
+.b-tooltip.is-top.is-closed:before {
+    border-top: 5px solid grey;
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+    bottom: calc(100% + 2px);
+}
+
+.b-tooltip.is-closed:after {
+    background: grey;
+    color: white;
+}
+
+.b-tooltip.is-top.is-orange:before {
+    border-top: 5px solid orange;
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+    bottom: calc(100% + 2px);
+}
+
+.b-tooltip.is-orange:after {
+    background: orange(122, 119, 113);
+    color: white;
+}
+
+.darkDanger {
+    background-color: #ff0095;
+    color: white;
+    border: 0px;
+}
+
+.darkInfo {
+    background-color: #00b7ff;
+    color: white;
+    border: 0px;
+}
+
+.exportButton {
+    float: right;
+    margin-right: 22px;
+    margin-bottom: 22px;
+}
+
+.floatRight {
+    float: right;
+}
+
+.height4Em {
+    height: 4em;
+}
+
+.input, .taginput .taginput-container.is-focusable, .textarea {
+    background-color: rgba(255, 255, 255, 0.137);
+}
+
+.height59Px {
+    min-height: 59px;
+}
+
+.minHeight45Em {
+    min-height: 45em;
+}
+
+.margin1Px {
+    margin: 1px;
+}
+
+.marginLeft45Px {
+    margin-left: 45px;
+  }
+
+.marginRight20Px {
+    margin-right: 20px;
+}
+
+.marginRight15Px {
+    margin-right: 15px;
+}
+
+.marginLeft0Px {
+    margin-left: 0px;
+}
+
+.marginLeft10Px {
+    margin-left: 10px;
+}
+
+.marginLeft15Px {
+    margin-left: 15px;
+}
+
+.marginLeft20Px {
+    margin-left: 20px;
+}
+
+.margin2Em {
+    margin: 2em;
+}
+
+.marginLeft3Em {
+    margin-left: 3em;
+}
+
+.marginLeftPoint4Em {
+    margin-left: .4em;
+}
+
+.marginLeft7Em {
+    margin-left: 7em;
+}
+
+.marginLeft12Em {
+    margin-left: 12em;
+}
+
+.marginLeft17Em {
+    margin-left: 17em;
+}
+
+.marginTop90Px {
+    margin-top: 90px;
+}
+
+.marginTop18Point5 {
+    margin-top: 18.5px;
+}
+
+.marginTop15Px {
+    margin-top: 15px;
+}
+
+.marginTop10Px {
+    margin-top: 10px;
+}
+
+.marginTop5Px {
+    margin-top: 5px;
+}
+
+.marginBottom3Em {
+    margin-bottom: 3em;
+}
+
+.marginBottom5Px {
+    margin-bottom: 5px;
+}
+
+.maxWidth10Px {
+    max-width: 10px;
+}
+
+.maxHeight25Px {
+    max-height: 25px;
+}
+
+.noBorder {
+    border: none;
+}
+
+.paddingLeftRight40Px {
+    padding: 0px 40px;
+}
+
+.paddingRight0Px {
+    padding-right: 0px;
+}
+
+.paddingTopRightLeft20Px {
+    padding: 20px 0px;
+}
+
+.padding20Px {
+    padding: 20px;
+}
+
+.paddingTop5Px {
+    padding: 5px;
+}
+
+.paddingTop10Px {
+    padding: 10px;
+}
+
+.severity {
+    height: 2em;
+    font-size: 0.75rem;
+}
+
+table tr.is-selected {
+    background-color: #4d4d4d !important;
+}
+
+.tableFeatures {
+    float: right;
+}
+
+.tag.closed {
+    background-color: grey;
+    color: white;
+}
+
+.tag.dangerDark {
+    color: #fff;
+    background-color: #ff0095;
+}
+
+.tag.darkInfo {
+    background-color: #00b7ff;
+    color: #fff;
+}
+
+.darkCard {
+    .table.table thead th {
+        border-bottom-color: rgb(68, 68, 68);
+    }
+
+    .table td {
+        border-color: rgb(68, 68, 68);
+    }
+
+    .table .th-wrap {
+        color: white;
+        border-color: rgb(68, 68, 68);
+    }
+}
+
+.tag.is-warning {
+    color: rgb(134, 134, 134);
+    background-color: rgb(255,230,0);
+}
+
+.tag.scanInfoTag {
+    font-size: 15px;
+    border: 0px;
+    padding: 0 10px 0 10px;
+    margin: 10px;
+}
+
+span.tag.is-warning {
+    color: rgb(134, 134, 134);
+    background-color: rgb(255,230,0);
+}
+
+.underlined {
+    text-decoration: underline;
+}
+
+.whiteText {
+    color: white;
+}
+
+.width8Em {
+    width: 8em;
+}
