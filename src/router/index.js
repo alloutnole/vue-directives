@@ -3,6 +3,7 @@ import Router from 'vue-router';
 import Home from '@/views/Home.vue';
 import About from '@/views/About.vue';
 import Contact from '@/views/Contact.vue';
+import Calculator from '@/views/Calculator.vue';
 
 Vue.use(Router);
 
@@ -24,6 +25,11 @@ export default new Router({
             path: '/contact',
             name: 'Contact',
             component: Contact,
+        },
+        {
+            path: '/calculator',
+            name: 'Calculator',
+            component: Calculator
         }
     ],
 });
