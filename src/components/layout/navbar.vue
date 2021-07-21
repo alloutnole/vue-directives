@@ -12,10 +12,10 @@
             <b-navbar-item href="/">
                 Home 
             </b-navbar-item>
-            <b-navbar-item href="#">
+            <b-navbar-item href="/about">
                 About 
             </b-navbar-item>
-            <b-navbar-item href="#">
+            <b-navbar-item href="/contact">
                 Contact
             </b-navbar-item>
         </template>

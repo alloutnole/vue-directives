@@ -1,22 +1,17 @@
 <template>
   <div id="app" class="container">
-    <nav-bar />
-    <collapse />
-    <directives />    
+    <nav-bar /> 
+    <router-view/>       
   </div>
 </template>
 
 <script>
 import NavBar from './components/layout/navbar.vue'
-import Directives from './components/Directives.vue'
-import Collapse from './components/Collapse.vue'
 
 export default {
   name: 'App',
   components: {
     NavBar,
-    Directives,
-    Collapse,
   }
 }
 </script>

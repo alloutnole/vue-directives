@@ -10,6 +10,9 @@ import Buefy from 'buefy';
 import Bulma from 'bulma/bulma.sass';
 import moment from 'moment';
 
+/* Router */
+import router from './router';
+
 Vue.prototype.moment = moment;
 Vue.use(Buefy);
 Vue.use(Bulma);
@@ -17,5 +20,6 @@ Vue.use(Bulma);
 Vue.config.productionTip = false
 
 new Vue({
+  router,
   render: h => h(App),
 }).$mount('#app')
