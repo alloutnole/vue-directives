@@ -8,6 +8,11 @@
                 v-model="calculation"
                 style="width: 50%; margin: auto"
                 ref="calculator_input_field"
+                icon="calculator"
+                type="is-success"
+                icon-right="close-circle"
+                icon-right-clickable
+                @icon-right-click="clearIconClick">
                 rounded
             ></b-input>
         </b-field>
@@ -42,15 +47,18 @@ export default {
             this.calculation += (token);
         },
         performCalculation(string_expression){
-            debugger
+            // debugger
             try{
                 this.solution = "Solution: " + eval(string_expression);
                 this.valid_input = 'is-success'
                 this.calculation_message = 'valid expression'
             } catch {
                 this.valid_input = 'is-danger'
-                this.calculation_message = 'invalid expression'
+                this.calculation_message = "invalid expression: '" + string_expression + "'"
             }
+        },
+        clearIconClick(){
+            this.calculation = ''
         }
     }
 }
