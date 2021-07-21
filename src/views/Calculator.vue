@@ -14,96 +14,37 @@
 
         <h2>{{solution}} </h2>
 
-        <div class="columns">
-            <!-- Left Column -->
-            <div class="calculator_buttons_container column">
-                <div style="display: inline-flex">
-                    <div v-for="number in row1"
-                            class="column"
-                            :key="number">
-                                <b-button @click="insertNumber($event)">
-                                    {{ number }}
-                                </b-button>
-                    </div>
-                </div>
-                <br/>
-
-                <div style="display: inline-flex">
-                        <div v-for="number in row2"
-                                class="column"
-                                :key="number">
-                                    <b-button @click="insertNumber($event)">
-                                        {{ number }}
-                                    </b-button>
-                    </div>
-                </div>
-                <br/>
-
-                <div style="display: inline-flex">
-                    <div v-for="number in row3"
-                            class="column"
-                            :key="number">
-                                <b-button @click="insertNumber($event)">
-                                    {{ number }}
-                                </b-button>
-                </div>
-                </div>
-
-                <div>
-                    <div>
-                        <b-button @click="insertNumber">
-                            0
-                        </b-button>
-                    </div>
-                </div>
-                <br/>
-                        
-                <div>
-                    <div>
-                        <b-button @click="performCalculation" rounded>
-                            Calculate
-                        </b-button>
-                    </div>
-                </div>
-                <br/>
-
-            </div>
-
-            <!-- Right Column -->
-            <div class="math_operations_container" style="position: absolute; right: 15rem; top: 15rem;">
-                <b-button @click="insertNumber">+</b-button><br/>
-                <b-button @click="insertNumber">-</b-button><br/>
-                <b-button @click="insertNumber">/</b-button><br/>
-                <b-button @click="insertNumber">*</b-button>
-            </div>
-        </div>
-        
+        <calculator-panel
+            @submit-expression="performCalculation"
+            @insert-number="insertNum_or_Symbol"
+            :current_calculation_expression="calculation"
+        ></calculator-panel>
     </div>
 </template>
 
 <script>
+import CalculatorPanel from '../components/CalculatorPanel.vue';
 
 export default {
+  components: { CalculatorPanel },
     name: 'Calculator',
     data() {
         return {
             calculation: '',
             valid_input: 'is-info',
-            row1: [1, 2, 3],
-            row2: [4, 5, 6],
-            row3: [7, 8, 9],
             solution: "Solution will show up here",
             calculation_message: "Provide a mathematical expression above"
         }
     },
     methods: {
-        insertNumber(e){
-            console.log(e.target);
-            this.calculation += (e.target.innerText);
+        insertNum_or_Symbol(token){
+            console.log(token);
+            this.calculation += (token);
         },
-        performCalculation(){
+        performCalculation(string_expression){
+            debugger
             try{
-                this.solution = "Solution: " + eval(this.$refs.calculator_input_field.value);
+                this.solution = "Solution: " + eval(string_expression);
                 this.valid_input = 'is-success'
                 this.calculation_message = 'valid expression'
             } catch {
