@@ -18,6 +18,9 @@
             <b-navbar-item href="/contact">
                 Contact
             </b-navbar-item>
+            <b-navbar-item href="/calculator">
+                Calculator
+            </b-navbar-item>
         </template>
     </b-navbar>
 </template>
