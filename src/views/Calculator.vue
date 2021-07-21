@@ -49,7 +49,7 @@ export default {
         performCalculation(string_expression){
             // debugger
             try{
-                this.solution = "Solution: " + eval(string_expression);
+                this.solution = "Result: " + eval(string_expression);
                 this.valid_input = 'is-success'
                 this.calculation_message = 'valid expression'
             } catch {
@@ -59,6 +59,7 @@ export default {
         },
         clearIconClick(){
             this.calculation = ''
+            this.solution = 'Result: '
         }
     }
 }

@@ -5,7 +5,7 @@
                     <div v-for="number in row1"
                             class="column"
                             :key="number">
-                                <b-button @click="insertNumber($event)">
+                                <b-button type="is-link is-primary" @click="insertNumber($event)" outlined>
                                     {{ number }}
                                 </b-button>
                     </div>
@@ -16,7 +16,7 @@
                         <div v-for="number in row2"
                                 class="column"
                                 :key="number">
-                                    <b-button @click="insertNumber($event)">
+                                    <b-button type="is-link is-primary" @click="insertNumber($event)" outlined>
                                         {{ number }}
                                     </b-button>
                     </div>
@@ -27,7 +27,7 @@
                     <div v-for="number in row3"
                             class="column"
                             :key="number">
-                                <b-button @click="insertNumber($event)">
+                                <b-button type="is-link is-primary" @click="insertNumber($event)" outlined>
                                     {{ number }}
                                 </b-button>
                 </div>
@@ -35,7 +35,7 @@
 
                 <div>
                     <div>
-                        <b-button @click="insertNumber">
+                        <b-button type="is-link is-primary" @click="insertNumber" outlined>
                             0
                         </b-button>
                     </div>
@@ -44,7 +44,7 @@
                         
                 <div>
                     <div>
-                        <b-button @click="submitExpression" rounded>
+                        <b-button type="is-link is-primary" @click="submitExpression" rounded outlined>
                             Calculate
                         </b-button>
                     </div>
@@ -54,10 +54,10 @@
             </div>
 
             <div class="math_operations_container" style="position: absolute; right: 15rem; top: 15rem;">
-                <b-button @click="insertNumber">+</b-button><br/>
-                <b-button @click="insertNumber">-</b-button><br/>
-                <b-button @click="insertNumber">/</b-button><br/>
-                <b-button @click="insertNumber">*</b-button>
+                <b-button type="is-link is-primary" @click="insertNumber" outlined>+</b-button><br/>
+                <b-button type="is-link is-primary" @click="insertNumber" outlined>-</b-button><br/>
+                <b-button type="is-link is-primary" @click="insertNumber" outlined>/</b-button><br/>
+                <b-button type="is-link is-primary" @click="insertNumber" outlined>*</b-button>
             </div>
     </div>
 </template>
